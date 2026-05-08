@@ -1,11 +1,11 @@
 ####################################################################################
 ####                                                                            ####
-####                           Mumbai  (ap-south-1)                            ####
+####                           Hyderabad  (ap-south-2)                            ####
 ####                                                                            ####
 ####################################################################################
 
 provider "aws" {
-  region                   = "ap-south-1"
+  region                   = "ap-south-2"
 }
 
 ####################################################################################
@@ -18,6 +18,6 @@ terraform {
   backend "s3" {
     bucket                  = "yesbank-network-preprod-tf-state"
     key                     = "network/network.tfstate"
-    region                  = "ap-south-1"
+    region                  = "ap-south-2"
   }
 }
